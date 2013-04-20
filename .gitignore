@@ -1,0 +1,115 @@
+//alert("JavaScript works!");
+/* Clifton Abraham
+ 04/16/13
+ SDI1 Assignment 2
+ Life of A War King
+*/
+ 
+var storySoFar = " So Far My Love was taken from me, Those Bastards "
+    + " they swooped down from the trees and knocked me out with a dart "
+    + " and took my Queen ";
+var tigerWarKing;
+var blackNinjas = ["Nate", "Thomas", "Quamel"];
+var Vines = true;
+var myGold = 30;
+var merchant = true; 
+var coins;
+var speed;
+var Attacks;
+// Procedure Function  
+   var historyLesson = function(Information){
+   console.log(storySoFar);
+   console.log(" So I take my leave I left my Top General Incharge. I will find You my Love!!! ")
+   console.log("I left the castle in search for my lost love")
+   var merchant = true, Price = 10; 
+   var myGold = 30
+    if(merchant === true){
+        console.log(" I didnt know what direction to go in, Then i Saw him ")
+    } // fist if conditional
+    if(myGold >= Price){
+        console.log ( 
+     " the merchant down the road " + " for ten coin ")
+      console.log( " The Merchant told me he saw 3 black suited men, one of them was carrying a woman "
+    + " he said they went to the left towards the forest.")
+    } else {
+        console.log(" I don't have enough money" + " so I went to the left ")
+        console.log(" Tiger War King got devored by a bear "
+                    + " Game Over!!! ")
+    };
+
+};
+  historyLesson("Directions");
+// Boolean function
+    var forest = function(swinging, swimming){
+       var Vines = true;
+        if(Vines === true){
+            console.log("I took the merchant's advice, now I'm in the forest.");
+            console.log("I see vines so I swing over the water to the otherside.");
+        } else{
+            console.log("I ran to the forest I see water so I jumped in"
+                        + " and got ate by a aligator"
+                        + " Game Over!!! ");
+        };
+        return true;
+};// end of function
+var puzzleOfTrees = forest("landed");
+console.log(" Now that I made past the water I can continue my jorney. ")
+// Number function
+var bonusMatch = function(bonus){
+     coins = 50;
+    var speed = "Congradulations you now have speed!!";
+       console.log(" I stumbled on to a bonus match " + " Can I get fifty coins? ")
+    while(coins > 0){
+         coins = coins - 5;
+          console.log(coins + " coins left " + " Getting this money!! ");
+       if (coins > 0){
+        console.log(" I'm loving this!! ")
+     } else{
+          console.log(speed + " Now its time to get back to my journey. ")
+       return;
+    
+        } if(coins == 25  ){
+            console.log(" I guess these coins will have to do ")
+            
+            } // end of else 
+    } // end of while loop 
+ 
+    
+};// end of function
+var bonusStage =  bonusMatch(0);
+// string function
+var Cave = function(where, walking){
+    var tigerWarKing = " I approached a cave full of darkness "
+                     + "I see three shadows in the distance."
+             console.log(tigerWarKing
+                         + " I moved to closer find the three men that took my love. ")
+             return tigerWarKing;
+}; // end of function
+var endOfTheRoad = Cave(" I see them ")
+console.log(" It's been a long journey but I think I found her!! ")
+// Array function
+var theFight = function(blackNinjas, howMany){
+    console.log("I ran up on the three ninjas and the fight started. " )
+    Attacks = [
+               " defeated ",
+               " stabbed ",
+               " dismembered "];
+    blackNinjas = [
+                   "Nate",
+                   "Thomas",
+                   "Quamel"];
+  howMany = 3;
+    
+    for(var i = 0, z=0 , b = blackNinjas.length, a= Attacks.length; i < b, z < a; i++, z++){
+        console.log(" I " +  Attacks [z] + blackNinjas [i])
+        
+    }
+    return Attacks;
+    
+    
+    
+}; // end of function
+
+var showDown = theFight("lost", "won")
+console.log("I have won the battle" + " my wife is found time to take her back to the castle ")
+
